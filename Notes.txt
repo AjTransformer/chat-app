@@ -1,0 +1,5 @@
+-->Styled Componenet used for creatinf styles inside a js file.
+
+react-toastify -> light-weight and user friendly toast notification library for react. It allows the developers to display tempory messages. alert or notification.
+
+To summarize, next is primarily used for error handling in your code. When an error occurs, it passes control to the error-handling middleware, ensuring that errors are properly logged and appropriate responses are sent to the client. This helps in maintaining clean and manageable code by separating error-handling logic from the main functionality.
