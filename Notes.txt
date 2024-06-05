@@ -3,3 +3,17 @@
 react-toastify -> light-weight and user friendly toast notification library for react. It allows the developers to display tempory messages. alert or notification.
 
 To summarize, next is primarily used for error handling in your code. When an error occurs, it passes control to the error-handling middleware, ensuring that errors are properly logged and appropriate responses are sent to the client. This helps in maintaining clean and manageable code by separating error-handling logic from the main functionality.
+
+
+//About buffer module-
+The buffer module is a powerful utility that allows you to manipulate binary data in JavaScript, both in Node.js and in the browser. Let me provide you with more details:What is the buffer module?
+The buffer module is originally from Node.js, but it has been adapted for use in the browser as well.
+Its primary purpose is to handle binary data efficiently, such as working with raw bytes, encoding/decoding data, and managing buffers.
+The goal of the browser-compatible buffer module is to provide an API that is 100% identical to Node.js’ Buffer API.
+Features and Benefits:
+Manipulate Binary Data: You can work with binary data seamlessly across different environments.
+Super Fast: The implementation is backed by Typed Arrays (Uint8Array / ArrayBuffer), which ensures high performance.
+Small Bundle Size: The minified and gzipped size is only 6.75KB, making it lightweight.
+Excellent Browser Support: It works well in Chrome, Firefox, Edge, Safari 11+, iOS 11+, Android, and other modern browsers.
+Preserves Node API: The API remains consistent with Node.js’ Buffer API, with only one minor difference.
+Square-Bracket Notation: You can use square-bracket notation like buf[4] to access individual octets.
