@@ -17,3 +17,6 @@ Small Bundle Size: The minified and gzipped size is only 6.75KB, making it light
 Excellent Browser Support: It works well in Chrome, Firefox, Edge, Safari 11+, iOS 11+, Android, and other modern browsers.
 Preserves Node API: The API remains consistent with Node.js’ Buffer API, with only one minor difference.
 Square-Bracket Notation: You can use square-bracket notation like buf[4] to access individual octets.
+
+//React Icons-
+To install new icons... example -> import {BiPowerOff} from "react-icons/bi";
