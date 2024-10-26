@@ -20,3 +20,44 @@ Square-Bracket Notation: You can use square-bracket notation like buf[4] to acce
 
 //React Icons-
 To install new icons... example -> import {BiPowerOff} from "react-icons/bi";
+
+In React, UUIDs can be used to generate unique identifiers for elements or components, which is especially useful when you need to create a list of elements with unique keys. You can use the uuid library, which provides a method to generate UUIDs. Here’s a quick example:
+
+Install the uuid library using npm or yarn:
+npm install uuid
+or
+yarn add uuid
+
+Import the v4 method from the uuid library in your component file:
+JavaScript
+
+import { v4 as uuidv4 } from 'uuid';
+Use uuidv4() to generate a new UUID wherever you need a unique key:
+JavaScript
+
+const uniqueKey = uuidv4();
+
+
+
+From ChatContainer -
+
+useEffect(()=>{
+    scrollRef.current?.scrollIntoView({behavior :"smooth"});
+} , [message]);
+
+
+Breakdown:
+Hook Dependency Array [message]:
+
+The useEffect hook has a dependency array that contains the message state. This means the effect will run every time the message state changes (i.e., when a new message is added).
+scrollRef.current?.scrollIntoView({behavior :"smooth"}):
+
+scrollRef is a reference created using useRef().
+scrollRef.current refers to the DOM element associated with the last message in the chat (as the ref={scrollRef} is assigned to each message).
+The optional chaining operator ?. ensures that if scrollRef.current is null or undefined, the method scrollIntoView will not be called, preventing potential runtime errors.
+scrollIntoView({behavior: "smooth"}) is a method that scrolls the element into view. The { behavior: "smooth" } parameter ensures that the scrolling is smooth, providing a better user experience.
+Purpose:
+The primary purpose of this useEffect is to ensure that the chat view automatically scrolls down to the latest message whenever the message state updates (e.g., when a new message is sent or received). This way, users do not have to manually scroll down to see the latest messages, which is especially useful in a chat application to keep the conversation flow seamless.
+
+Practical Use Case:
+Whenever a new message is appended to the chat (either sent by the user or received from the other party), the message state updates. This triggers the useEffect hook, causing the chat container to scroll to the latest message smoothly. This ensures that the user always sees the most recent part of the conversation without needing to scroll manually.
